@@ -21,7 +21,7 @@ scales = {
     "trillion": 1000000000000
 }
 
-# Build numwords dictionary
+# Build numwords dictionary to help the code understand strings
 numwords = {word: idx for idx, word in enumerate(units)}
 numwords.update({word: idx * 10 for idx, word in enumerate(tens) if word})
 numwords.update(scales)
